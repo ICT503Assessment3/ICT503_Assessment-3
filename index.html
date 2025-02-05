@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Health Monitoring System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monitor.html">Monitor Health</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Your Health Dashboard</h2>
+            <p>Monitor your health parameters and receive personalised tips.</p>
+
+            <p>Monitor your health parameters and receive personalised tips.</p>
+
+            <!-- Motivation Paragraph -->
+            <div class="motivation">
+                <h3>Stay Motivated!</h3>
+                <p>Health is not just about what you're eating. It's also about what you're thinking and saying.
+                    Remember, "Take care of your body. It's the only place you have to live." - Jim Rohn</p>
+                <p>Every step you take towards better health is a step worth celebrating. Embrace the journey,
+                    and let each day be an opportunity to grow stronger, healthier, and happier.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Health Monitoring System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+
+        // Highlight the active page link
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

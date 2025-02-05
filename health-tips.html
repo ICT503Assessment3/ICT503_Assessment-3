@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips - Health Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Health Monitoring System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monitor.html">Monitor Health</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="health-tips">
+            <h2>Health Tips</h2>
+            <p>Here are some personalized health tips based on your monitoring results:</p>
+            <ul>
+                <li>Stay hydrated by drinking at least 8 glasses of water daily.</li>
+                <li>Incorporate a balanced diet with plenty of fruits and vegetables.</li>
+                <li>Engage in physical activity for at least 30 minutes each day.</li>
+                <li>Get enough sleep—aim for 7-9 hours per night.</li>
+                <li>Regularly check your health parameters to stay informed.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Health Monitoring System. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        // Highlight the active page link
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

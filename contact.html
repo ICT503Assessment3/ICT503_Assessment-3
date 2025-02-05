@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Health Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Health Monitoring System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monitor.html">Monitor Health</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, please reach out to us:</p>
+            <p>Email: <a href="mailto:support@healthmonitor.com">support@healthmonitor.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Health Monitoring System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+
+        // Highlight the active page link
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
